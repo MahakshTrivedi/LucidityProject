@@ -33,7 +33,6 @@ const InventoryTable = ({
     setOpen(true);
     setSelectedIndex(index);
   };
-  const handleClose = () => setOpen(false);
 
   const handleView = (index: number) => {
     setInventoryData(

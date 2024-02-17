@@ -13,6 +13,7 @@ const InventoryStats = ({ isUserMode }: InventoryStatsProps) => {
   const fetchInventoryData = useFetchInventoryData(setInventoryData);
   useEffect(() => {
     fetchInventoryData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
