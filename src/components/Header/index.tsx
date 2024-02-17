@@ -1,5 +1,3 @@
-import Switch from "@mui/material/Switch";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import GreenSwitch from "./GreenSwitch";
 import LogoutIcon from "@mui/icons-material/LogoutOutlined";
 import { StyledHeader, StyledIcon, StyledText } from "./style";
