@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledTable = styled.div`
-    background-color: #212124;
+    // background-color: #212124;
+    overflow: hidden;
 `;
 
 export const StyledColumn = styled.div`
