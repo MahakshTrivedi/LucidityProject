@@ -58,9 +58,11 @@ const InventoryTable = ({
         component={Paper}
         sx={{
           padding: "0px 0px",
-          borderRight: "2px solid black",
-          backgroundColor: "lightblue",
+          backgroundColor: "#212124",
           fontSize: "1.1rem",
+          height: "100%",
+          width: "100%",
+          borderRadius: "10px",
         }}
       >
         <Table>
@@ -86,9 +88,9 @@ const InventoryTable = ({
               </TableCell>
             </TableRow>
           </TableHead>
-          <TableBody sx={{ backgroundColor: "#f0f0f0" }}>
+          <TableBody sx={{ backgroundColor: "#212124" }}>
             {inventoryData?.map((inventoryItem, index) => (
-              <TableRow>
+              <TableRow sx={{borderBottomColor:"#39393c"}}>
                 <TableCell>
                   <Typography
                     sx={{
@@ -145,7 +147,7 @@ const InventoryTable = ({
                     aria-label="Edit"
                   >
                     <EditIcon
-                      {...(isUserMode
+                      {...(isUserMode||inventoryItem?.isDisabled
                         ? { sx: { color: "grey" } }
                         : { sx: { color: "green" } })}
                     />
@@ -155,7 +157,7 @@ const InventoryTable = ({
                     aria-label="View"
                     disabled={isUserMode}
                   >
-                    {inventoryItem?.isDisabled ? (
+                    {inventoryItem?.isDisabled && !isUserMode ? (
                       <VisibilityOffIcon sx={{ color: "purple" }} />
                     ) : (
                       <VisibilityIcon

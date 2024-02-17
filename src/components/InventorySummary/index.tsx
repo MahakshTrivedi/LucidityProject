@@ -57,7 +57,7 @@ const InventorySummary = ({ inventoryData }: InventorySummaryProps) => {
           </StyledIcon>
           <StyledInfo>
             <Typography>Total product</Typography>
-            {totalProducts}
+            <Typography variant="h4">{totalProducts}</Typography>
           </StyledInfo>
         </StyledBox>
         <StyledBox>
@@ -66,7 +66,7 @@ const InventorySummary = ({ inventoryData }: InventorySummaryProps) => {
           </StyledIcon>
           <StyledInfo>
             <Typography>Total store value</Typography>
-            {totalStoreValue}
+            <Typography variant="h4"> {totalStoreValue}</Typography>
           </StyledInfo>
         </StyledBox>
         <StyledBox>
@@ -76,7 +76,7 @@ const InventorySummary = ({ inventoryData }: InventorySummaryProps) => {
 
           <StyledInfo>
             <Typography>Out of stocks</Typography>
-            {outOfStockProducts}
+            <Typography variant="h4">{outOfStockProducts}</Typography>
           </StyledInfo>
         </StyledBox>
         <StyledBox>
@@ -86,7 +86,7 @@ const InventorySummary = ({ inventoryData }: InventorySummaryProps) => {
 
           <StyledInfo>
             <Typography>No of category</Typography>
-            {totalCategories}
+            <Typography variant="h4">{totalCategories}</Typography>
           </StyledInfo>
         </StyledBox>
       </StyledInventorySummary>
