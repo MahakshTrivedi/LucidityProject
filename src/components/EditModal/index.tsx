@@ -59,8 +59,6 @@ const EditModal = ({
     handleClose();
   };
 
-  //TODO disable save button UI wise
-
   const hasChanges = () => {
     return (
       editedValues.category !== inventoryItem?.category ||
@@ -70,7 +68,6 @@ const EditModal = ({
     );
   };
 
-  //TODO : add border around cancel icon, Save button
   return (
     <StyledModal>
       <Modal
@@ -85,7 +82,6 @@ const EditModal = ({
             top: "50%",
             left: "50%",
             width: 400,
-            // height: 600,//TODO
             transform: "translate(-50%, -50%)",
             bgcolor: "white",
             p: 3,
